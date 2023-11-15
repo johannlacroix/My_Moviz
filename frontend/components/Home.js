@@ -51,7 +51,7 @@ function Home() {
     fetch('https://my-moviz-back-kappa.vercel.app/movies')
       .then(response => response.json())
       .then(returnedData => {
-        setMovies(returnedData.movies.results);
+        setMovies(returnedData.movies);
       });
   }, []);
 

@@ -48,7 +48,7 @@ function Home() {
 
   const returnedData = [{}];
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://my-moviz-back-kappa.vercel.app/movies')
       .then(response => response.json())
       .then(returnedData => {
         setMovies(returnedData.movies.results);
